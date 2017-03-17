@@ -6,35 +6,34 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Sign up for Heaven Match</title>
+        <title>search page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="home.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="../css/home.css" media="screen" />
     </head>
     <body>
-        <h1>Fill the details and get your heaven match</h1>
-        <form method="POST" action="searchResult">
+        <h1>Search for the perfect match</h1>
+        <form>
             <p>
-                <span class="create-form-field-title">Name</span>
-                <input name="name" type="text">
-            </p>
-            <p>
-                <span class="create-form-field-title">Nickname</span>
-                <input name="nick" type="text">
-            </p>
-            <p>
-                <span class="create-form-field-title">Gender</span>
+                <span class="create-form-field-title">Interested in:</span>
                 <select name="gender" size="1">
-                     <option>Male</option>
-                     <option>Female</option>
+                    <option>Male</option>
+                    <option>Female</option>
                 </select>
             </p>
             <p>
-                <span class="create-form-field-title">Upload photo</span>
-                <input name="pic" type="file">
+                <span class="create-form-field-title">Working status:</span>
+                <select name="status">
+                    <option>Working</option>
+                    <option>Not Working</option>
+                </select>
             </p>
             <p>
-                <span class="create-form-field-title">Age</span>
+                <span class="create-form-field-title">Income:</span>
+                <input name="income" type="number">
+            </p>
+            <p>
+                <span class="create-form-field-title">Age Required:</span>
                 <select name="age" size="1">
                     <option> 16-20</option>
                     <option> 21-25</option>
@@ -43,9 +42,8 @@ and open the template in the editor.
                     <option> 36-40</option>
                 </select>
             </p>
-            
             <p>
-                <span class="create-form-field-title">Desperate</span>
+                <span class="create-form-field-title">Desperate:</span>
                 <input type="range" min="0" max="10" step="1">
             </p>
             <center>
@@ -53,4 +51,5 @@ and open the template in the editor.
             </center>
         </form>
     </body>
+
 </html>
