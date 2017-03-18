@@ -7,7 +7,7 @@ package com.example.web;
 
 /**
  *
- * @author Sunny
+ * @author Sonali
  */
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -17,12 +17,12 @@ public class createProfile extends HttpServlet{
     public void doGet(HttpServletRequest request, HttpServletResponse response)
     throws IOException, ServletException {
         
-        RequestDispatcher view = request.getRequestDispatcher("form.jsp");
-        view.forward(request, response);
-        //response.setContentType("text/html");
+        //RequestDispatcher view = request.getRequestDispatcher("form.jsp");
+        //view.forward(request, response);
+        response.setContentType("text/html");
         //response.sendRedirect("./form.jsp");
-        //PrintWriter out = response.getWriter();
-        //out.println("Create form <br>");
+        PrintWriter out = response.getWriter();
+        out.println("Welcome page <br>");
         
         //String c = request.getParameter("color");
         //String c = "Create form for adding new profile";

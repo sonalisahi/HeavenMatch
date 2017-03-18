@@ -10,7 +10,7 @@ import javax.servlet.http.*;
 import java.io.*;
 /**
  *
- * @author Sunny
+ * @author Sonali
  */
 public class BeerSelect extends HttpServlet{
     public void doPost(HttpServletRequest request, HttpServletResponse response)
