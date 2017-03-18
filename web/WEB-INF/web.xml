@@ -12,13 +12,13 @@ and open the template in the editor.
   metadata-complete="true">
     
     <servlet>
-      <servlet-name>Signup</servlet-name>
-      <servlet-class>com.example.web.createProfile</servlet-class>
+      <servlet-name>welcome</servlet-name>
+      <servlet-class>com.example.web.Welcome</servlet-class>
     </servlet>
     
     <servlet-mapping>
-      <servlet-name>Signup</servlet-name>
-      <url-pattern>searchResult.do</url-pattern>
+      <servlet-name>welcome</servlet-name>
+      <url-pattern>/signup</url-pattern>
     </servlet-mapping>
-    
+
 </web-app>

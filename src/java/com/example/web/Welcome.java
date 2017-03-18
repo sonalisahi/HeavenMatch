@@ -12,7 +12,7 @@ import java.io.*;
  *
  * @author Sonali
  */
-public class BeerSelect extends HttpServlet{
+public class Welcome extends HttpServlet{
     public void doPost(HttpServletRequest request, HttpServletResponse response)
     throws IOException, ServletException{
         response.setContentType("text/html");
@@ -20,7 +20,7 @@ public class BeerSelect extends HttpServlet{
         PrintWriter out = response.getWriter();
         out.println("Beer selection advice <br>");
         
-        String c = request.getParameter("color");
-        out.println("<br> Got beer color : " + c);
+        String c = request.getParameter("name");
+        out.println("<br> Welcome " + c);
     }
 }
